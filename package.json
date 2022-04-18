@@ -1,0 +1,12 @@
+{
+  "name": "bank-app",
+  "private": true,
+  "description": "Web App where users can create banks and calculate mortgage payments using one of these bank's settings",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "author": "Andrii Kotliar",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}
