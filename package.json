@@ -1,9 +1,10 @@
 {
-  "name": "bank-app",
+  "name": "mortgage-calculator",
   "private": true,
   "description": "Web App where users can create banks and calculate mortgage payments using one of these bank's settings",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/*.html --port 3000",
+    "build": "parcel build src/*.html"
   },
   "author": "Andrii Kotliar",
   "devDependencies": {
