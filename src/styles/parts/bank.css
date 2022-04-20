@@ -1,0 +1,111 @@
+.bank {
+  position: relative;
+  width: var(--card-size);
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  border: var(--card-border);
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.bank:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bank__title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cecece;
+  padding-right: 40px;
+}
+
+.bank__text-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bank__text-row::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px dotted #ccc;
+  z-index: 1;
+}
+
+.bank__text-row:last-child {
+  margin-bottom: 0;
+}
+
+.bank__text-row span {
+  position: relative;
+  background-color: #faf8f8;
+  z-index: 2;
+}
+
+.bank__text-row span:first-child {
+  margin-right: 15px;
+}
+
+.bank__settings-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.bank__settings {
+  position: absolute;
+  background-color: #fff;
+  top: 50px;
+  right: 20px;
+  padding: 15px;
+  z-index: 10;
+  border-radius: 5px 0 5px 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bank__settings.settings-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bank__settings::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -15px;
+  border: 10px solid transparent;
+  border-bottom: 5px solid #fff;
+  border-right: 10px solid #fff;
+}
+
+.bank__settings button {
+  width: 100%;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.bank__settings button:hover {
+  transform: scale(1.05);
+}
+
+.bank__edit-button {
+  margin-bottom: 10px;
+  background-color: #ccc;
+}
+
+.bank__delete-button {
+  color: #fff;
+  background-color: #ef5350;
+}

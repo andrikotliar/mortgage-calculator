@@ -1,0 +1,58 @@
+.new-bank__title {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ccc;
+  padding: 10px 0;
+}
+
+.new-bank__title:focus {
+  border-color: #000;
+}
+
+.new-bank__title.error {
+  border-color: red;
+}
+
+.new-bank__settings {
+  margin-bottom: 30px;
+}
+
+.new-bank__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.new-bank__row:last-child {
+  margin-bottom: 0;
+}
+
+.new-bank__row span:last-child {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin-left: 50px;
+}
+
+.new-bank__row input[type="number"] {
+  width: 100%;
+  font-size: 20px;
+  margin-right: 10px;
+  box-shadow: 0 0 0 2px #ddd;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.new-bank__row input[type="number"]:focus {
+  box-shadow: 0 0 0 2px #000;
+}
+
+.new-bank__row input[type="number"].error {
+  box-shadow: 0 0 0 2px red;
+}
