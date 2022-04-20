@@ -1,0 +1,29 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #cecece;
+}
+
+.page-header__title {
+  color: #4cd579;
+  font-size: 40px;
+}
+
+.page-header__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 730px) {
+  .page-header {
+    flex-direction: column;
+  }
+  .page-header__title {
+    margin-bottom: 20px;
+  }
+}
